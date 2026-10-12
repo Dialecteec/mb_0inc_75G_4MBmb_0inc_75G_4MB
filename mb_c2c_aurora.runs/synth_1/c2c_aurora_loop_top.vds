@@ -1,0 +1,558 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Aug  5 14:19:48 2026
+# Process ID: 1576035
+# Current directory: /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1
+# Command line: vivado -log c2c_aurora_loop_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c2c_aurora_loop_top.tcl
+# Log file: /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/c2c_aurora_loop_top.vds
+# Journal file: /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/vivado.jou
+# Running On: pc-Z13PE-D16-Series, OS: Linux, CPU Frequency: 798.887 MHz, CPU Physical cores: 32, Host memory: 134815 MB
+#-----------------------------------------------------------
+source c2c_aurora_loop_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2021.2/data/ip'.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3164.133 ; gain = 304.148 ; free physical = 18708 ; free virtual = 96879
+Command: read_checkpoint -auto_incremental -incremental /home/raofutian/30_hard_project/mb_c2c_aurora/mb_c2c_aurora.srcs/utils_1/imports/synth_1/c2c_aurora_loop_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/raofutian/30_hard_project/mb_c2c_aurora/mb_c2c_aurora.srcs/utils_1/imports/synth_1/c2c_aurora_loop_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top c2c_aurora_loop_top -part xcu280-fsvh2892-2L-e -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1576210
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3752.156 ; gain = 278.797 ; free physical = 17099 ; free virtual = 95270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'c2c_aurora_loop_top' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/sources_1/new/c2c_aurora_loop_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55219]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55219]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55396]
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (2#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55396]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (3#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55204]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:340]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_3' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_3' (4#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_3_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:347]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora1_state_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_aurora1_state_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora1_state_0' (5#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_aurora1_state_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_aurora_64b66b_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_0_0' (6#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_aurora_64b66b_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gt_refclk1_out' of module 'design_1_aurora_64b66b_0_0' is unconnected for instance 'aurora_64b66b_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+WARNING: [Synth 8-7071] port 'sync_clk_out' of module 'design_1_aurora_64b66b_0_0' is unconnected for instance 'aurora_64b66b_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+WARNING: [Synth 8-7071] port 'gt_qpllclk_quad1_out' of module 'design_1_aurora_64b66b_0_0' is unconnected for instance 'aurora_64b66b_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+WARNING: [Synth 8-7071] port 'gt_qpllrefclk_quad1_out' of module 'design_1_aurora_64b66b_0_0' is unconnected for instance 'aurora_64b66b_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+WARNING: [Synth 8-7071] port 'tx_out_clk' of module 'design_1_aurora_64b66b_0_0' is unconnected for instance 'aurora_64b66b_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+WARNING: [Synth 8-7023] instance 'aurora_64b66b_0' of module 'design_1_aurora_64b66b_0_0' has 35 connections declared, but only 30 given [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_aurora_64b66b_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0' (7#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_aurora_64b66b_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gt_refclk1_out' of module 'design_1_aurora_64b66b_1_0' is unconnected for instance 'aurora_64b66b_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+WARNING: [Synth 8-7071] port 'sync_clk_out' of module 'design_1_aurora_64b66b_1_0' is unconnected for instance 'aurora_64b66b_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+WARNING: [Synth 8-7071] port 'gt_qpllclk_quad1_out' of module 'design_1_aurora_64b66b_1_0' is unconnected for instance 'aurora_64b66b_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+WARNING: [Synth 8-7071] port 'gt_qpllrefclk_quad1_out' of module 'design_1_aurora_64b66b_1_0' is unconnected for instance 'aurora_64b66b_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+WARNING: [Synth 8-7071] port 'tx_out_clk' of module 'design_1_aurora_64b66b_1_0' is unconnected for instance 'aurora_64b66b_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+WARNING: [Synth 8-7023] instance 'aurora_64b66b_1' of module 'design_1_aurora_64b66b_1_0' has 35 connections declared, but only 30 given [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (8#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_1' (9#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_chip2chip_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_chip2chip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_chip2chip_0_0' (10#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_chip2chip_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'axi_c2c_s2m_intr_out' of module 'design_1_axi_chip2chip_0_0' is unconnected for instance 'axi_chip2chip_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:506]
+WARNING: [Synth 8-7071] port 'aurora_do_cc' of module 'design_1_axi_chip2chip_0_0' is unconnected for instance 'axi_chip2chip_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:506]
+WARNING: [Synth 8-7023] instance 'axi_chip2chip_0' of module 'design_1_axi_chip2chip_0_0' has 50 connections declared, but only 48 given [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:506]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_chip2chip_1_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_chip2chip_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_chip2chip_1_0' (11#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_chip2chip_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'axi_c2c_m2s_intr_out' of module 'design_1_axi_chip2chip_1_0' is unconnected for instance 'axi_chip2chip_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:555]
+WARNING: [Synth 8-7071] port 'aurora_do_cc' of module 'design_1_axi_chip2chip_1_0' is unconnected for instance 'axi_chip2chip_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:555]
+WARNING: [Synth 8-7023] instance 'axi_chip2chip_1' of module 'design_1_axi_chip2chip_1_0' has 49 connections declared, but only 47 given [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:555]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:1046]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:1972]
+INFO: [Synth 8-6157] synthesizing module 'design_1_m00_data_fifo_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_m00_data_fifo_0' (12#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (13#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:1972]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_I4GRPB' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:2382]
+INFO: [Synth 8-6157] synthesizing module 'design_1_m01_data_fifo_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_m01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_m01_data_fifo_0' (14#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_m01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_I4GRPB' (15#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:2382]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:2792]
+INFO: [Synth 8-6157] synthesizing module 'design_1_s00_data_fifo_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_s00_data_fifo_0' (16#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_s00_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_s00_data_fifo_0' is unconnected for instance 's00_data_fifo' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:3095]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_s00_data_fifo_0' is unconnected for instance 's00_data_fifo' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:3095]
+WARNING: [Synth 8-7023] instance 's00_data_fifo' of module 'design_1_s00_data_fifo_0' has 80 connections declared, but only 78 given [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:3095]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (17#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:2792]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (18#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (19#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:1046]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mm_clean_passthr_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_mm_clean_passthr_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mm_clean_passthr_0_0' (20#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_axi_mm_clean_passthr_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (21#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:801]
+INFO: [Synth 8-6157] synthesizing module 'design_1_c2c1_state_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_c2c1_state_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_c2c1_state_0' (22#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_c2c1_state_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:807]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_2' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_2' (23#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (24#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cfg_mgmt_zero_19_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_cfg_mgmt_zero_19_0/synth/design_1_cfg_mgmt_zero_19_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (25#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cfg_mgmt_zero_19_0' (26#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_cfg_mgmt_zero_19_0/synth/design_1_cfg_mgmt_zero_19_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cfg_mgmt_zero_32_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_cfg_mgmt_zero_32_0/synth/design_1_cfg_mgmt_zero_32_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (26#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cfg_mgmt_zero_32_0' (27#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_cfg_mgmt_zero_32_0/synth/design_1_cfg_mgmt_zero_32_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cfg_mgmt_zero_4_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_cfg_mgmt_zero_4_0/synth/design_1_cfg_mgmt_zero_4_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (27#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cfg_mgmt_zero_4_0' (28#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_cfg_mgmt_zero_4_0/synth/design_1_cfg_mgmt_zero_4_0.v:57]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:822]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_4' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_4' (29#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_4_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:842]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_1' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_1' (30#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_1_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:888]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (31#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:934]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_1_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_1_0' (32#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_1_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_vio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_1_0' (33#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_vio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_2_2' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_vio_2_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_2_2' (34#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_vio_2_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_xdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0' (35#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/.Xil/Vivado-1576035-pc-Z13PE-D16-Series/realtime/design_1_xdma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'user_lnk_up' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 56 connections declared, but only 50 given [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:987]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (36#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' (36#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (37#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_2_0' [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_2_0' (38#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'c2c_aresten'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:813]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_interconnect_0'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:603]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_chip2chip_1'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:555]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_chip2chip_0'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:506]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_bram_ctrl_1'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:461]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_bram_ctrl_0'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:416]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_1'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:980]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_2'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:983]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aurora_64b66b_0'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:354]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aurora_64b66b_1'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:385]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aurora1_state'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:340]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:822]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'aurora1_state1'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:347]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'c2c0_state'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:801]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'c2c1_state'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:807]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'loop_back_ram'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:842]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'loop_out'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:888]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_mm_clean_passthr_0'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:725]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'passthr'. This will prevent further optimization [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:934]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (39#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (40#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'c2c_aurora_loop_top' (41#1) [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/sources_1/new/c2c_aurora_loop_top.v:23]
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_O7FAN0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_O7FAN0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_I4GRPB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_I4GRPB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1CA5Z32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1CA5Z32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3813.062 ; gain = 339.703 ; free physical = 16652 ; free virtual = 94824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3830.875 ; gain = 357.516 ; free physical = 16247 ; free virtual = 94419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3830.875 ; gain = 357.516 ; free physical = 16246 ; free virtual = 94418
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3836.812 ; gain = 0.000 ; free physical = 16129 ; free virtual = 94301
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora_64b66b_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora_64b66b_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_chip2chip_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_chip2chip_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_1_0/design_1_axi_chip2chip_1_0/design_1_axi_chip2chip_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_chip2chip_1'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_1_0/design_1_axi_chip2chip_1_0/design_1_axi_chip2chip_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_chip2chip_1'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora_64b66b_1'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora_64b66b_1'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/c2c_aresten'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/c2c_aresten'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/blk_mem_gen_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/loop_out'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/loop_out'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1/design_1_ila_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/loop_back_ram'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1/design_1_ila_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/loop_back_ram'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2/design_1_c2c1_state_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/c2c1_state'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_2/design_1_ila_0_2/design_1_c2c1_state_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/c2c1_state'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_c2c1_state_0/design_1_c2c1_state_0/design_1_c2c1_state_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/c2c0_state'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_c2c1_state_0/design_1_c2c1_state_0/design_1_c2c1_state_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/c2c0_state'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_3/design_1_ila_0_3/design_1_ila_0_3_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora1_state'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_3/design_1_ila_0_3/design_1_ila_0_3_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora1_state'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora1_state_0/design_1_aurora1_state_0/design_1_ila_0_3_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora1_state1'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora1_state_0/design_1_aurora1_state_0/design_1_ila_0_3_in_context.xdc] for cell 'design_1_wrapper/design_1_i/aurora1_state1'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0/design_1_vio_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/vio_1'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0/design_1_vio_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/vio_1'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_4/design_1_ila_0_4/design_1_ila_0_4_in_context.xdc] for cell 'design_1_wrapper/design_1_i/ila_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_0_4/design_1_ila_0_4/design_1_ila_0_4_in_context.xdc] for cell 'design_1_wrapper/design_1_i/ila_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_vio_2_2/design_1_vio_2_2/design_1_vio_2_2_in_context.xdc] for cell 'design_1_wrapper/design_1_i/vio_2'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_vio_2_2/design_1_vio_2_2/design_1_vio_2_2_in_context.xdc] for cell 'design_1_wrapper/design_1_i/vio_2'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/xdma_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/xdma_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_bram_ctrl_1'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_1_0/design_1_ila_1_0/design_1_ila_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/passthr'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_ila_1_0/design_1_ila_1_0/design_1_ila_1_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/passthr'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0/design_1_s00_data_fifo_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_m00_data_fifo_0/design_1_m00_data_fifo_0/design_1_m00_data_fifo_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_m00_data_fifo_0/design_1_m00_data_fifo_0/design_1_m00_data_fifo_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_m01_data_fifo_0/design_1_m01_data_fifo_0/design_1_m00_data_fifo_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_m01_data_fifo_0/design_1_m01_data_fifo_0/design_1_m00_data_fifo_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_mm_clean_passthr_0_0/design_1_axi_mm_clean_passthr_0_0/design_1_axi_mm_clean_passthr_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_mm_clean_passthr_0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_mm_clean_passthr_0_0/design_1_axi_mm_clean_passthr_0_0/design_1_axi_mm_clean_passthr_0_0_in_context.xdc] for cell 'design_1_wrapper/design_1_i/axi_mm_clean_passthr_0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/constrs_1/new/c2c_auora_loop.xdc]
+WARNING: [Vivado 12-2489] -period contains time 6.206061 which will be rounded to 6.206 to ensure it is an integer multiple of 1 picosecond [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/constrs_1/new/c2c_auora_loop.xdc:5]
+WARNING: [Vivado 12-2489] -period contains time 6.206061 which will be rounded to 6.206 to ensure it is an integer multiple of 1 picosecond [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/constrs_1/new/c2c_auora_loop.xdc:14]
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/constrs_1/new/c2c_auora_loop.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.srcs/constrs_1/new/c2c_auora_loop.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/c2c_aurora_loop_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/c2c_aurora_loop_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3924.391 ; gain = 0.000 ; free physical = 16942 ; free virtual = 95115
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3924.391 ; gain = 0.000 ; free physical = 16942 ; free virtual = 95115
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_wrapper/design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3924.391 ; gain = 451.031 ; free physical = 17053 ; free virtual = 95226
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3924.391 ; gain = 451.031 ; free physical = 17053 ; free virtual = 95226
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_0_clk_n. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_0_clk_n. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_0_clk_p. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_0_clk_p. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_1_rxp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_1_txp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0/design_1_aurora_64b66b_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_1_clk_n. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_1_clk_n. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_1_clk_p. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_DIFF_REFCLK1_1_clk_p. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_RX_0_rxp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for GT_SERIAL_TX_0_txp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[2]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[3]. (constraint file  /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/design_1_xdma_0_0/design_1_xdma_0_0_in_context.xdc, line 33).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/aurora_64b66b_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_chip2chip_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_chip2chip_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/aurora_64b66b_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/c2c_aresten. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/loop_out. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/loop_back_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/c2c1_state. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/c2c0_state. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/aurora1_state. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/aurora1_state1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/vio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/vio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/xdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/cfg_mgmt_zero_19. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/cfg_mgmt_zero_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/cfg_mgmt_zero_32. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/passthr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_wrapper/design_1_i/axi_mm_clean_passthr_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3924.391 ; gain = 451.031 ; free physical = 17054 ; free virtual = 95226
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3924.391 ; gain = 451.031 ; free physical = 17057 ; free virtual = 95230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3924.391 ; gain = 451.031 ; free physical = 17043 ; free virtual = 95221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 4237.703 ; gain = 764.344 ; free physical = 16531 ; free virtual = 94709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 4259.758 ; gain = 786.398 ; free physical = 16525 ; free virtual = 94704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4266.695 ; gain = 793.336 ; free physical = 16525 ; free virtual = 94704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4266.695 ; gain = 793.336 ; free physical = 16525 ; free virtual = 94704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4266.695 ; gain = 793.336 ; free physical = 16525 ; free virtual = 94704
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_m00_data_fifo_0          |         1|
+|2     |design_1_m01_data_fifo_0          |         1|
+|3     |design_1_s00_data_fifo_0          |         1|
+|4     |design_1_xbar_0                   |         1|
+|5     |design_1_ila_0_3                  |         1|
+|6     |design_1_aurora1_state_0          |         1|
+|7     |design_1_aurora_64b66b_0_0        |         1|
+|8     |design_1_aurora_64b66b_1_0        |         1|
+|9     |design_1_axi_bram_ctrl_0_0        |         1|
+|10    |design_1_axi_bram_ctrl_0_1        |         1|
+|11    |design_1_axi_chip2chip_0_0        |         1|
+|12    |design_1_axi_chip2chip_1_0        |         1|
+|13    |design_1_axi_mm_clean_passthr_0_0 |         1|
+|14    |design_1_blk_mem_gen_0_0          |         1|
+|15    |design_1_c2c1_state_0             |         1|
+|16    |design_1_ila_0_2                  |         1|
+|17    |design_1_vio_0_0                  |         1|
+|18    |design_1_ila_0_4                  |         1|
+|19    |design_1_ila_0_1                  |         1|
+|20    |design_1_ila_0_0                  |         1|
+|21    |design_1_ila_1_0                  |         1|
+|22    |design_1_vio_1_0                  |         1|
+|23    |design_1_vio_2_2                  |         1|
+|24    |design_1_xdma_0_0                 |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_aurora1_state          |     1|
+|2     |design_1_aurora_64b66b_0        |     1|
+|3     |design_1_aurora_64b66b_1        |     1|
+|4     |design_1_axi_bram_ctrl_0        |     2|
+|6     |design_1_axi_chip2chip_0        |     1|
+|7     |design_1_axi_chip2chip_1        |     1|
+|8     |design_1_axi_mm_clean_passthr_0 |     1|
+|9     |design_1_blk_mem_gen_0          |     1|
+|10    |design_1_c2c1_state             |     1|
+|11    |design_1_ila_0                  |     5|
+|16    |design_1_ila_1                  |     1|
+|17    |design_1_m00_data_fifo          |     1|
+|18    |design_1_m01_data_fifo          |     1|
+|19    |design_1_s00_data_fifo          |     1|
+|20    |design_1_vio_0                  |     1|
+|21    |design_1_vio_1                  |     1|
+|22    |design_1_vio_2                  |     1|
+|23    |design_1_xbar                   |     1|
+|24    |design_1_xdma_0                 |     1|
+|25    |IBUFDS_GTE4                     |     1|
+|26    |IBUF                            |     1|
+|27    |IBUFDS                          |     1|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4266.695 ; gain = 793.336 ; free physical = 16525 ; free virtual = 94704
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 4266.695 ; gain = 699.820 ; free physical = 16562 ; free virtual = 94740
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4266.703 ; gain = 793.336 ; free physical = 16562 ; free virtual = 94740
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4266.703 ; gain = 0.000 ; free physical = 16650 ; free virtual = 94829
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4348.984 ; gain = 0.000 ; free physical = 16540 ; free virtual = 94719
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Synth Design complete, checksum: e341bda3
+INFO: [Common 17-83] Releasing license: Synthesis
+132 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 4348.984 ; gain = 1184.852 ; free physical = 16734 ; free virtual = 94912
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/synth_1/c2c_aurora_loop_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file c2c_aurora_loop_top_utilization_synth.rpt -pb c2c_aurora_loop_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  5 14:20:37 2026...

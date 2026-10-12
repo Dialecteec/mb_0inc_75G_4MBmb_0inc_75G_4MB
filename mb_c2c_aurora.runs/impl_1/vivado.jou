@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Aug  5 14:20:45 2026
+# Process ID: 1576456
+# Current directory: /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/impl_1
+# Command line: vivado -log c2c_aurora_loop_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source c2c_aurora_loop_top.tcl -notrace
+# Log file: /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/impl_1/c2c_aurora_loop_top.vdi
+# Journal file: /home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.runs/impl_1/vivado.jou
+# Running On: pc-Z13PE-D16-Series, OS: Linux, CPU Frequency: 799.003 MHz, CPU Physical cores: 32, Host memory: 134815 MB
+#-----------------------------------------------------------
+source c2c_aurora_loop_top.tcl -notrace

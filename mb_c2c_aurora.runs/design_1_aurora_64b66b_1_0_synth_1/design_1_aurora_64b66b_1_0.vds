@@ -1,0 +1,1264 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jul 30 09:31:31 2026
+# Process ID: 2431112
+# Current directory: /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1
+# Command line: vivado -log design_1_aurora_64b66b_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_aurora_64b66b_1_0.tcl
+# Log file: /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/design_1_aurora_64b66b_1_0.vds
+# Journal file: /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/vivado.jou
+# Running On: pc-Z13PE-D16-Series, OS: Linux, CPU Frequency: 1961.395 MHz, CPU Physical cores: 29, Host memory: 134815 MB
+#-----------------------------------------------------------
+source design_1_aurora_64b66b_1_0.tcl -notrace
+Command: synth_design -top design_1_aurora_64b66b_1_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2431406
+WARNING: [Synth 8-2306] macro DLY redefined [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/design_1_aurora_64b66b_1_0_axi_to_drp.v:74]
+WARNING: [Synth 8-2306] macro DLY redefined [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_multi_wrapper.v:63]
+WARNING: [Synth 8-2306] macro DLY redefined [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_polarity_check.v:74]
+WARNING: [Synth 8-2306] macro DLY redefined [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_wrapper.v:86]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3620.109 ; gain = 278.797 ; free physical = 7824 ; free virtual = 66875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_support' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_support.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_gt_common_wrapper' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_gt_common_wrapper.v:9]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtye4_common_wrapper' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/design_1_aurora_64b66b_1_0_gt_gtye4_common_wrapper.v:4]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_gtye4_common' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gtwizard_ultrascale_v1_7_gtye4_common.v:55]
+INFO: [Synth 8-6157] synthesizing module 'GTYE4_COMMON' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:40414]
+INFO: [Synth 8-6155] done synthesizing module 'GTYE4_COMMON' (1#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:40414]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_gtye4_common' (2#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gtwizard_ultrascale_v1_7_gtye4_common.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtye4_common_wrapper' (3#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/design_1_aurora_64b66b_1_0_gt_gtye4_common_wrapper.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_gt_common_wrapper' (4#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_gt_common_wrapper.v:9]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55396]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (5#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:55396]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CLOCK_MODULE' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_clock_module.v:68]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_ultrascale_tx_userclk' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_ultrascale_tx_userclk.v:62]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1259]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (6#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1259]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_ultrascale_tx_userclk' (7#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_ultrascale_tx_userclk.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CLOCK_MODULE' (8#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_clock_module.v:68]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+WARNING: [Synth 8-6014] Unused sequential element stg6_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:596]
+WARNING: [Synth 8-6014] Unused sequential element stg7_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:597]
+WARNING: [Synth 8-6014] Unused sequential element stg8_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:598]
+WARNING: [Synth 8-6014] Unused sequential element stg9_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:599]
+WARNING: [Synth 8-6014] Unused sequential element stg10_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:600]
+WARNING: [Synth 8-6014] Unused sequential element stg11_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:601]
+WARNING: [Synth 8-6014] Unused sequential element stg12_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:602]
+WARNING: [Synth 8-6014] Unused sequential element stg13_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:603]
+WARNING: [Synth 8-6014] Unused sequential element stg14_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:604]
+WARNING: [Synth 8-6014] Unused sequential element stg15_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:605]
+WARNING: [Synth 8-6014] Unused sequential element stg16_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:606]
+WARNING: [Synth 8-6014] Unused sequential element stg17_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:607]
+WARNING: [Synth 8-6014] Unused sequential element stg18_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:608]
+WARNING: [Synth 8-6014] Unused sequential element stg19_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:609]
+WARNING: [Synth 8-6014] Unused sequential element stg20_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:610]
+WARNING: [Synth 8-6014] Unused sequential element stg21_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:611]
+WARNING: [Synth 8-6014] Unused sequential element stg22_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:612]
+WARNING: [Synth 8-6014] Unused sequential element stg23_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:613]
+WARNING: [Synth 8-6014] Unused sequential element stg24_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:614]
+WARNING: [Synth 8-6014] Unused sequential element stg25_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:615]
+WARNING: [Synth 8-6014] Unused sequential element stg26_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:616]
+WARNING: [Synth 8-6014] Unused sequential element stg27_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:617]
+WARNING: [Synth 8-6014] Unused sequential element stg28_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:618]
+WARNING: [Synth 8-6014] Unused sequential element stg29_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:619]
+WARNING: [Synth 8-6014] Unused sequential element stg30_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:620]
+WARNING: [Synth 8-6014] Unused sequential element stg31_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:621]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync' (9#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_SUPPORT_RESET_LOGIC' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_support_reset_logic.v:63]
+INFO: [Synth 8-3936] Found unconnected internal register 'dly_gt_rst_r_reg' and it is trimmed from '20' to '19' bits. [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_support_reset_logic.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_SUPPORT_RESET_LOGIC' (10#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_support_reset_logic.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_core' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_core.v:72]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_RESET_LOGIC' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_reset_logic.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_RESET_LOGIC' (11#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_reset_logic.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_AURORA_LANE' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_aurora_lane.v:74]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_LANE_INIT_SM' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_lane_init_sm.v:69]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (12#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:106149]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27824]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (13#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27824]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync' (14#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_LANE_INIT_SM' (15#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_lane_init_sm.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_SYM_GEN' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_sym_gen.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_SYM_GEN' (16#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_sym_gen.v:72]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_SYM_DEC' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_sym_dec.v:73]
+WARNING: [Synth 8-6014] Unused sequential element rxdatavalid_r_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_sym_dec.v:196]
+WARNING: [Synth 8-6014] Unused sequential element sync_header_r_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_sym_dec.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_SYM_DEC' (17#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_sym_dec.v:73]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_ERR_DETECT' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_err_detect.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_ERR_DETECT' (18#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_err_detect.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_AURORA_LANE' (19#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_aurora_lane.v:74]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_WRAPPER' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_wrapper.v:66]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized0' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized0' (19#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized1' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized1' (19#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized0' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+WARNING: [Synth 8-6014] Unused sequential element stg4_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:594]
+WARNING: [Synth 8-6014] Unused sequential element stg5_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:595]
+WARNING: [Synth 8-6014] Unused sequential element stg6_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:596]
+WARNING: [Synth 8-6014] Unused sequential element stg7_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:597]
+WARNING: [Synth 8-6014] Unused sequential element stg8_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:598]
+WARNING: [Synth 8-6014] Unused sequential element stg9_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:599]
+WARNING: [Synth 8-6014] Unused sequential element stg10_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:600]
+WARNING: [Synth 8-6014] Unused sequential element stg11_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:601]
+WARNING: [Synth 8-6014] Unused sequential element stg12_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:602]
+WARNING: [Synth 8-6014] Unused sequential element stg13_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:603]
+WARNING: [Synth 8-6014] Unused sequential element stg14_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:604]
+WARNING: [Synth 8-6014] Unused sequential element stg15_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:605]
+WARNING: [Synth 8-6014] Unused sequential element stg16_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:606]
+WARNING: [Synth 8-6014] Unused sequential element stg17_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:607]
+WARNING: [Synth 8-6014] Unused sequential element stg18_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:608]
+WARNING: [Synth 8-6014] Unused sequential element stg19_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:609]
+WARNING: [Synth 8-6014] Unused sequential element stg20_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:610]
+WARNING: [Synth 8-6014] Unused sequential element stg21_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:611]
+WARNING: [Synth 8-6014] Unused sequential element stg22_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:612]
+WARNING: [Synth 8-6014] Unused sequential element stg23_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:613]
+WARNING: [Synth 8-6014] Unused sequential element stg24_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:614]
+WARNING: [Synth 8-6014] Unused sequential element stg25_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:615]
+WARNING: [Synth 8-6014] Unused sequential element stg26_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:616]
+WARNING: [Synth 8-6014] Unused sequential element stg27_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:617]
+WARNING: [Synth 8-6014] Unused sequential element stg28_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:618]
+WARNING: [Synth 8-6014] Unused sequential element stg29_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:619]
+WARNING: [Synth 8-6014] Unused sequential element stg30_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:620]
+WARNING: [Synth 8-6014] Unused sequential element stg31_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:621]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized0' (19#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized1' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+WARNING: [Synth 8-6014] Unused sequential element stg6_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:596]
+WARNING: [Synth 8-6014] Unused sequential element stg7_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:597]
+WARNING: [Synth 8-6014] Unused sequential element stg8_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:598]
+WARNING: [Synth 8-6014] Unused sequential element stg9_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:599]
+WARNING: [Synth 8-6014] Unused sequential element stg10_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:600]
+WARNING: [Synth 8-6014] Unused sequential element stg11_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:601]
+WARNING: [Synth 8-6014] Unused sequential element stg12_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:602]
+WARNING: [Synth 8-6014] Unused sequential element stg13_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:603]
+WARNING: [Synth 8-6014] Unused sequential element stg14_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:604]
+WARNING: [Synth 8-6014] Unused sequential element stg15_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:605]
+WARNING: [Synth 8-6014] Unused sequential element stg16_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:606]
+WARNING: [Synth 8-6014] Unused sequential element stg17_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:607]
+WARNING: [Synth 8-6014] Unused sequential element stg18_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:608]
+WARNING: [Synth 8-6014] Unused sequential element stg19_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:609]
+WARNING: [Synth 8-6014] Unused sequential element stg20_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:610]
+WARNING: [Synth 8-6014] Unused sequential element stg21_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:611]
+WARNING: [Synth 8-6014] Unused sequential element stg22_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:612]
+WARNING: [Synth 8-6014] Unused sequential element stg23_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:613]
+WARNING: [Synth 8-6014] Unused sequential element stg24_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:614]
+WARNING: [Synth 8-6014] Unused sequential element stg25_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:615]
+WARNING: [Synth 8-6014] Unused sequential element stg26_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:616]
+WARNING: [Synth 8-6014] Unused sequential element stg27_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:617]
+WARNING: [Synth 8-6014] Unused sequential element stg28_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:618]
+WARNING: [Synth 8-6014] Unused sequential element stg29_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:619]
+WARNING: [Synth 8-6014] Unused sequential element stg30_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:620]
+WARNING: [Synth 8-6014] Unused sequential element stg31_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:621]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized1' (19#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_MULTI_GT' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_multi_wrapper.v:67]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_ultrascale_rx_userclk' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_ultrascale_rx_userclk.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_ultrascale_rx_userclk' (20#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_ultrascale_rx_userclk.v:62]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_gt' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtwizard_top' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt_gtwizard_top.v:175]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4.v:143]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtye4_channel_wrapper' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt_gtye4_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_gtye4_channel' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_channel.v:55]
+INFO: [Synth 8-6157] synthesizing module 'GTYE4_CHANNEL' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:39253]
+INFO: [Synth 8-6155] done synthesizing module 'GTYE4_CHANNEL' (21#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:39253]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_gtye4_channel' (22#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_channel.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtye4_channel_wrapper' (23#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt_gtye4_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_gtye4_delay_powergood' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:55]
+INFO: [Synth 8-226] default block is never used [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_gtye4_delay_powergood' (24#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_bit_synchronizer' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_bit_synchronizer' (25#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_reset_synchronizer' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_reset_synchronizer' (26#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:164]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_reset_inv_synchronizer' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_reset_inv_synchronizer' (27#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset' (28#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_gtwiz_userdata_tx' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_gtwiz_userdata_tx' (29#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v:55]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_12_gtwiz_userdata_rx' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_12_gtwiz_userdata_rx' (30#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/a478/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4' (31#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_gt_gtwizard_top' (32#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt_gtwizard_top.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_gt' (33#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_MULTI_GT' (34#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_multi_wrapper.v:67]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_common_reset_cbcc' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_common_reset_cbcc.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized2' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+WARNING: [Synth 8-6014] Unused sequential element stg12_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:602]
+WARNING: [Synth 8-6014] Unused sequential element stg13_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:603]
+WARNING: [Synth 8-6014] Unused sequential element stg14_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:604]
+WARNING: [Synth 8-6014] Unused sequential element stg15_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:605]
+WARNING: [Synth 8-6014] Unused sequential element stg16_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:606]
+WARNING: [Synth 8-6014] Unused sequential element stg17_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:607]
+WARNING: [Synth 8-6014] Unused sequential element stg18_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:608]
+WARNING: [Synth 8-6014] Unused sequential element stg19_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:609]
+WARNING: [Synth 8-6014] Unused sequential element stg20_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:610]
+WARNING: [Synth 8-6014] Unused sequential element stg21_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:611]
+WARNING: [Synth 8-6014] Unused sequential element stg22_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:612]
+WARNING: [Synth 8-6014] Unused sequential element stg23_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:613]
+WARNING: [Synth 8-6014] Unused sequential element stg24_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:614]
+WARNING: [Synth 8-6014] Unused sequential element stg25_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:615]
+WARNING: [Synth 8-6014] Unused sequential element stg26_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:616]
+WARNING: [Synth 8-6014] Unused sequential element stg27_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:617]
+WARNING: [Synth 8-6014] Unused sequential element stg28_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:618]
+WARNING: [Synth 8-6014] Unused sequential element stg29_reg was removed.  [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:619]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized2' (34#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized3' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized3' (34#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized4' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized4' (34#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized5' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_rst_sync__parameterized5' (34#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:539]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_common_reset_cbcc' (35#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_common_reset_cbcc.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_common_logic_cbcc' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_common_logic_cbcc.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_common_logic_cbcc' (36#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_common_logic_cbcc.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_SCRAMBLER_64B66B' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_64b66b_scrambler.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_SCRAMBLER_64B66B' (37#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_64b66b_scrambler.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized2' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized2' (37#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_DESCRAMBLER_64B66B' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_64b66b_descrambler.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_DESCRAMBLER_64B66B' (38#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_64b66b_descrambler.v:62]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_BLOCK_SYNC_SM' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_block_sync_sm.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_BLOCK_SYNC_SM' (39#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_block_sync_sm.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CLOCK_CORRECTION_CHANNEL_BONDING' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:71]
+INFO: [Synth 8-638] synthesizing module 'design_1_aurora_64b66b_1_0_fifo_gen_slave' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/synth/design_1_aurora_64b66b_1_0_fifo_gen_slave.vhd:79]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 72 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 72 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 1 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 1 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 6 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 4 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 2 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 6 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 7 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 450 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 449 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_RD_DEPTH bound to: 512 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_WR_DEPTH bound to: 512 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_6' declared at '/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/8ae1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_6' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/synth/design_1_aurora_64b66b_1_0_fifo_gen_slave.vhd:549]
+INFO: [Synth 8-256] done synthesizing module 'design_1_aurora_64b66b_1_0_fifo_gen_slave' (49#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/synth/design_1_aurora_64b66b_1_0_fifo_gen_slave.vhd:79]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CH_BOND_SLAVE' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:1393]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CH_BOND_SLAVE' (50#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:1393]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized3' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_cdc_sync__parameterized3' (50#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cdc_sync.v:105]
+INFO: [Synth 8-3936] Found unconnected internal register 'fifo_dout_reg' and it is trimmed from '72' to '71' bits. [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:1114]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CLOCK_CORRECTION_CHANNEL_BONDING' (51#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:71]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CLOCK_CORRECTION_CHANNEL_BONDING__parameterized0' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:71]
+INFO: [Synth 8-638] synthesizing module 'design_1_aurora_64b66b_1_0_fifo_gen_master' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/synth/design_1_aurora_64b66b_1_0_fifo_gen_master.vhd:79]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 72 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 72 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 1 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 1 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 6 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 4 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 2 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 13 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 1 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 450 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 449 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_RD_DEPTH bound to: 512 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 9 - type: integer 
+	Parameter C_WR_DEPTH bound to: 512 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 9 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_6' declared at '/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ipshared/8ae1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_6' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/synth/design_1_aurora_64b66b_1_0_fifo_gen_master.vhd:549]
+INFO: [Synth 8-256] done synthesizing module 'design_1_aurora_64b66b_1_0_fifo_gen_master' (52#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/synth/design_1_aurora_64b66b_1_0_fifo_gen_master.vhd:79]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CH_BOND_MASTER' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:1244]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CH_BOND_MASTER' (53#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:1244]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CLOCK_CORRECTION_CHANNEL_BONDING__parameterized0' (53#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_cbcc_gtx_6466.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_wrapper.v:2230]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_WRAPPER' (54#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/example_design/gt/design_1_aurora_64b66b_1_0_wrapper.v:66]
+WARNING: [Synth 8-7071] port 'TXDATAVALID_OUT_lane1' of module 'design_1_aurora_64b66b_1_0_WRAPPER' is unconnected for instance 'design_1_aurora_64b66b_1_0_wrapper_i' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_core.v:648]
+WARNING: [Synth 8-7071] port 'TXDATAVALID_OUT_lane2' of module 'design_1_aurora_64b66b_1_0_WRAPPER' is unconnected for instance 'design_1_aurora_64b66b_1_0_wrapper_i' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_core.v:648]
+WARNING: [Synth 8-7023] instance 'design_1_aurora_64b66b_1_0_wrapper_i' of module 'design_1_aurora_64b66b_1_0_WRAPPER' has 115 connections declared, but only 113 given [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_core.v:648]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_GLOBAL_LOGIC' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_global_logic.v:68]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_channel_init_sm.v:80]
+INFO: [Synth 8-6157] synthesizing module 'FD' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6155] done synthesizing module 'FD' (55#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6157] synthesizing module 'FD__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6155] done synthesizing module 'FD__parameterized0' (55#1) [/opt/tools/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27596]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM' (56#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_channel_init_sm.v:80]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CHANNEL_BOND_GEN' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_ch_bond_code_gen.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CHANNEL_BOND_GEN' (57#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_ch_bond_code_gen.v:75]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_CHANNEL_ERR_DETECT' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_channel_err_detect.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_CHANNEL_ERR_DETECT' (58#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_channel_err_detect.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_GLOBAL_LOGIC' (59#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_global_logic.v:68]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_TX_STREAM' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_tx_stream.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_TX_STREAM_DATAPATH' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_tx_stream_datapath.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_TX_STREAM_DATAPATH' (60#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_tx_stream_datapath.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_TX_STREAM_CONTROL_SM' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_tx_stream_control_sm.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_TX_STREAM_CONTROL_SM' (61#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_tx_stream_control_sm.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_TX_STREAM' (62#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_tx_stream.v:70]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_RX_STREAM' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_rx_stream.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_RX_STREAM_DATAPATH' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_rx_stream_datapath.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_RX_STREAM_DATAPATH' (63#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_rx_stream_datapath.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_RX_STREAM' (64#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_rx_stream.v:69]
+INFO: [Synth 8-6157] synthesizing module 'design_1_aurora_64b66b_1_0_STANDARD_CC_MODULE' [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_standard_cc_module.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_STANDARD_CC_MODULE' (65#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_standard_cc_module.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_core' (66#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_core.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0_support' (67#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0/src/design_1_aurora_64b66b_1_0_support.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_aurora_64b66b_1_0' (68#1) [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0.v:70]
+WARNING: [Synth 8-7129] Port RESET in module design_1_aurora_64b66b_1_0_RX_STREAM_DATAPATH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LANE_UP[0] in module design_1_aurora_64b66b_1_0_CHANNEL_ERR_DETECT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LANE_UP[1] in module design_1_aurora_64b66b_1_0_CHANNEL_ERR_DETECT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LANE_UP[2] in module design_1_aurora_64b66b_1_0_CHANNEL_ERR_DETECT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_NA_IDLES[0] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_NA_IDLES[1] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_NA_IDLES[2] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_CC[0] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_CC[1] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_CC[2] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_CB[0] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_CB[1] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_CB[2] in module design_1_aurora_64b66b_1_0_CHANNEL_INIT_SM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_aclk in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_rst_n in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[31] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[30] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[29] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[28] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[27] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[26] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[25] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[24] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[23] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[22] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[21] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[20] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[19] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[18] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[17] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[16] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[15] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[14] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[13] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[12] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[11] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[10] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[9] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[8] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[7] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[6] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[5] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[4] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[3] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[2] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_aclk in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_rst_n in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[31] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[30] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[29] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[28] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[27] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[26] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[25] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[24] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[23] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[22] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[21] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[20] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[19] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[18] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[17] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[16] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[15] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[14] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[13] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[12] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[11] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[10] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[9] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[8] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[7] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[6] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[5] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[4] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[3] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[2] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_rst_n in module design_1_aurora_64b66b_1_0_cdc_sync__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port overflow_rd_clk in module design_1_aurora_64b66b_1_0_CH_BOND_SLAVE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[8] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[7] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[6] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[8] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[7] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[6] in module output_blk is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[5] in module output_blk is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.984 ; gain = 471.672 ; free physical = 6436 ; free virtual = 65496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3821.891 ; gain = 480.578 ; free physical = 8916 ; free virtual = 67977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3821.891 ; gain = 480.578 ; free physical = 8916 ; free virtual = 67977
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3832.859 ; gain = 0.000 ; free physical = 8746 ; free virtual = 67806
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/slave_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/slave_fifo.data_fifo/U0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/slave_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/slave_fifo.data_fifo/U0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/design_1_aurora_64b66b_1_0_fifo_gen_master.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/master_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/design_1_aurora_64b66b_1_0_fifo_gen_master.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/master_fifo.data_fifo/U0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_0/synth/design_1_aurora_64b66b_1_0_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_aurora_64b66b_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_aurora_64b66b_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0.xdc] for cell 'inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_aurora_64b66b_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_aurora_64b66b_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave_clocks.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/slave_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave_clocks.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/slave_fifo.data_fifo/U0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave_clocks.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/slave_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_2/design_1_aurora_64b66b_1_0_fifo_gen_slave_clocks.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/slave_fifo.data_fifo/U0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/design_1_aurora_64b66b_1_0_fifo_gen_master_clocks.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/master_fifo.data_fifo/U0'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/ip_1/design_1_aurora_64b66b_1_0_fifo_gen_master_clocks.xdc] for cell 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/master_fifo.data_fifo/U0'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_aurora_64b66b_1_0/design_1_aurora_64b66b_1_0_clocks.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3993.547 ; gain = 0.000 ; free physical = 8983 ; free virtual = 68052
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  FD => FDRE: 2 instances
+  FDR => FDRE: 6 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3993.547 ; gain = 0.000 ; free physical = 8955 ; free virtual = 68024
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3993.547 ; gain = 652.234 ; free physical = 8896 ; free virtual = 67990
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3993.547 ; gain = 652.234 ; free physical = 8899 ; free virtual = 67993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/\master_fifo.data_fifo /U0. (constraint file  /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst. (constraint file  /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc, line 25).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc, line 29).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/\slave_fifo.data_fifo /U0. (constraint file  /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/\slave_fifo.data_fifo /U0. (constraint file  /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/dont_touch.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/\slave_fifo.data_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/\slave_fifo.data_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/\master_fifo.data_fifo . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3993.547 ; gain = 652.234 ; free physical = 8911 ; free virtual = 68005
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_rx_reg' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'cdr_reset_fsm_r_reg' in module 'design_1_aurora_64b66b_1_0_WRAPPER'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_TX_BRANCH |                              000 |                              000
+         ST_RESET_TX_PLL |                              001 |                              001
+    ST_RESET_TX_DATAPATH |                              010 |                              010
+   ST_RESET_TX_WAIT_LOCK |                              011 |                              011
+ST_RESET_TX_WAIT_USERRDY |                              100 |                              100
+ST_RESET_TX_WAIT_RESETDONE |                              101 |                              101
+        ST_RESET_TX_IDLE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_tx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_RX_BRANCH |                              000 |                              000
+         ST_RESET_RX_PLL |                              001 |                              001
+    ST_RESET_RX_DATAPATH |                              010 |                              010
+   ST_RESET_RX_WAIT_LOCK |                              011 |                              011
+    ST_RESET_RX_WAIT_CDR |                              100 |                              100
+ST_RESET_RX_WAIT_USERRDY |                              101 |                              101
+ST_RESET_RX_WAIT_RESETDONE |                              110 |                              110
+        ST_RESET_RX_IDLE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+     ST_RESET_ALL_BRANCH |                              000 |                              001
+     ST_RESET_ALL_TX_PLL |                              001 |                              010
+ST_RESET_ALL_TX_PLL_WAIT |                              010 |                              011
+      ST_RESET_ALL_RX_DP |                              011 |                              100
+     ST_RESET_ALL_RX_PLL |                              100 |                              101
+    ST_RESET_ALL_RX_WAIT |                              101 |                              110
+                  iSTATE |                              110 |                              111
+       ST_RESET_ALL_INIT |                              111 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_12_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+          ASSERT_RXRESET |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cdr_reset_fsm_r_reg' using encoding 'one-hot' in module 'design_1_aurora_64b66b_1_0_WRAPPER'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 3993.547 ; gain = 652.234 ; free physical = 8681 ; free virtual = 67778
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 17    
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   3 Input      1 Bit         XORs := 384   
++---XORs : 
+	                2 Bit    Wide XORs := 3     
++---Registers : 
+	              192 Bit    Registers := 3     
+	               72 Bit    Registers := 4     
+	               71 Bit    Registers := 2     
+	               67 Bit    Registers := 6     
+	               64 Bit    Registers := 27    
+	               58 Bit    Registers := 6     
+	               23 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 17    
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 838   
++---Muxes : 
+	   2 Input   72 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 4     
+	   3 Input    9 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 6     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 12    
+	   7 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 108   
+	   7 Input    1 Bit        Muxes := 22    
+	   8 Input    1 Bit        Muxes := 26    
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3993.547 ; gain = 652.234 ; free physical = 9099 ; free virtual = 68247
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/ultrascale_rx_userclk/gtwiz_userclk_rx_reset_in' to pin 'inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/gtwiz_userclk_rx_reset_in_r_reg/Q'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 4191.359 ; gain = 850.047 ; free physical = 8224 ; free virtual = 67370
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 4245.391 ; gain = 904.078 ; free physical = 8359 ; free virtual = 67520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 8322 ; free virtual = 67484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d4_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d5_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d6_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_out_d7_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d1_design_1_aurora_64b66b_1_0_cdc_to_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d2_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_aurora_64b66b_1_0_core_i/aurora_lane_0_i/lane_init_sm_i/u_cdc_rxlossofsync_in/s_level_out_bus_d3_inferred:in0[3] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11140 ; free virtual = 70319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11143 ; free virtual = 70321
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11503 ; free virtual = 70683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11552 ; free virtual = 70733
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11787 ; free virtual = 70968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11822 ; free virtual = 71003
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                        | RTL Name                                                                                                                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/common_reset_cbcc_i/u_rst_sync_fifo_reset_user_clk/stg11_reg         | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/common_reset_cbcc_i/u_rst_sync_fifo_reset_comb_user_clk_in/stg21_reg | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/common_reset_cbcc_i/u_rst_sync_reset_to_fifo_wr_clk/stg9_reg         | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/common_reset_cbcc_i/u_rst_sync_reset_to_fifo_rd_clk/stg31_reg        | 28     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/common_reset_cbcc_i/cbcc_fifo_reset_wr_clk_reg                       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/common_reset_cbcc_i/cbcc_fifo_reset_rd_clk_reg                       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/wait_for_wr_en_wr4_reg[5]                                | 4      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_i/valid_btf_detect_dlyd1_reg                               | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/wait_for_wr_en_wr4_reg[5]                          | 4      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane1_i/valid_btf_detect_dlyd1_reg                         | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/wait_for_wr_en_wr4_reg[5]                          | 4      | 6     | NO           | NO                 | YES               | 6      | 0       | 
+|design_1_aurora_64b66b_1_0_support | design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/cbcc_gtx0_lane2_i/valid_btf_detect_dlyd1_reg                         | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_aurora_64b66b_1_0_support | support_reset_logic_i/dly_gt_rst_r_reg[18]                                                                                                  | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG_GT       |     2|
+|2     |CARRY8        |    19|
+|3     |FIFO36E2      |     3|
+|5     |GTYE4_CHANNEL |     3|
+|6     |GTYE4_COMMON  |     1|
+|7     |IBUFDS_GTE4   |     1|
+|8     |LUT1          |  4876|
+|9     |LUT2          |   121|
+|10    |LUT3          |   458|
+|11    |LUT4          |   393|
+|12    |LUT5          |   250|
+|13    |LUT6          |   208|
+|14    |MUXF7         |     1|
+|15    |SRL16E        |    25|
+|16    |SRLC32E       |    12|
+|17    |FD            |     2|
+|18    |FDCE          |    86|
+|19    |FDPE          |    40|
+|20    |FDR           |     6|
+|21    |FDRE          |  4608|
+|22    |FDSE          |   132|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 4261.406 ; gain = 920.094 ; free physical = 11874 ; free virtual = 71054
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2004 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 4261.406 ; gain = 748.438 ; free physical = 12023 ; free virtual = 71204
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 4261.414 ; gain = 920.094 ; free physical = 12016 ; free virtual = 71196
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4261.414 ; gain = 0.000 ; free physical = 13415 ; free virtual = 72595
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[11].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[11].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/ultrascale_rx_userclk/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4360.805 ; gain = 0.000 ; free physical = 13000 ; free virtual = 72200
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  FD => FDRE: 2 instances
+  FDR => FDRE: 6 instances
+
+Synth Design complete, checksum: 16a22704
+INFO: [Common 17-83] Releasing license: Synthesis
+284 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:44 . Memory (MB): peak = 4360.805 ; gain = 1471.852 ; free physical = 13195 ; free virtual = 72395
+INFO: [Common 17-1381] The checkpoint '/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/design_1_aurora_64b66b_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_aurora_64b66b_1_0, cache-ID = 31f983170cb52913
+INFO: [Coretcl 2-1174] Renamed 53 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_aurora_64b66b_1_0_synth_1/design_1_aurora_64b66b_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_aurora_64b66b_1_0_utilization_synth.rpt -pb design_1_aurora_64b66b_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 09:32:30 2026...

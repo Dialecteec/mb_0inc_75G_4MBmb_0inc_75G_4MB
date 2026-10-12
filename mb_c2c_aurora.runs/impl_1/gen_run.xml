@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1785978338">
+  <File Type="RCFI_FILE" Name="c2c_aurora_loop_top.rcfi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="c2c_aurora_loop_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="c2c_aurora_loop_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="c2c_aurora_loop_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="c2c_aurora_loop_top_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="c2c_aurora_loop_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="c2c_aurora_loop_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="c2c_aurora_loop_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="c2c_aurora_loop_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="c2c_aurora_loop_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="c2c_aurora_loop_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="c2c_aurora_loop_top_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="c2c_aurora_loop_top_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="c2c_aurora_loop_top_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="c2c_aurora_loop_top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="c2c_aurora_loop_top_placed.dcp"/>
+  <File Type="OPT-DCP" Name="c2c_aurora_loop_top_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="c2c_aurora_loop_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="c2c_aurora_loop_top_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="c2c_aurora_loop_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="c2c_aurora_loop_top.sysdef"/>
+  <File Type="BITSTR-MMI" Name="c2c_aurora_loop_top.mmi"/>
+  <File Type="BITSTR-BMM" Name="c2c_aurora_loop_top_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="c2c_aurora_loop_top.nky"/>
+  <File Type="BITSTR-RBT" Name="c2c_aurora_loop_top.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="c2c_aurora_loop_top_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="c2c_aurora_loop_top_reports.tcl"/>
+  <File Type="ROUTE-TIMING-RPX" Name="c2c_aurora_loop_top_timing_summary_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="c2c_aurora_loop_top.hwdef"/>
+  <File Type="RBD_FILE" Name="c2c_aurora_loop_top.rbd"/>
+  <File Type="BITSTR-MSK" Name="c2c_aurora_loop_top.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="c2c_aurora_loop_top_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="c2c_aurora_loop_top.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="c2c_aurora_loop_top_timing_summary_routed.pb"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="c2c_aurora_loop_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="c2c_aurora_loop_top.vdi"/>
+  <File Type="OPT-DRC" Name="c2c_aurora_loop_top_drc_opted.rpt"/>
+  <File Type="NPI_FILE" Name="c2c_aurora_loop_top.npi"/>
+  <File Type="BG-BIN" Name="c2c_aurora_loop_top.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="c2c_aurora_loop_top_timing_summary_routed.rpt"/>
+  <File Type="CFI_FILE" Name="c2c_aurora_loop_top.cfi"/>
+  <File Type="BG-DRC" Name="c2c_aurora_loop_top.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="c2c_aurora_loop_top_routed_error.dcp"/>
+  <File Type="RNPI_FILE" Name="c2c_aurora_loop_top.rnpi"/>
+  <File Type="BG-BGN" Name="c2c_aurora_loop_top.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="c2c_aurora_loop_top_routed_bb.dcp"/>
+  <File Type="PDI-FILE" Name="c2c_aurora_loop_top.pdi"/>
+  <File Type="BG-BIT" Name="c2c_aurora_loop_top.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="c2c_aurora_loop_top_route_status.pb"/>
+  <File Type="PLACE-IO" Name="c2c_aurora_loop_top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="c2c_aurora_loop_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="c2c_aurora_loop_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="c2c_aurora_loop_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="c2c_aurora_loop_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="c2c_aurora_loop_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="c2c_aurora_loop_top_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="c2c_aurora_loop_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="c2c_aurora_loop_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="c2c_aurora_loop_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="c2c_aurora_loop_top_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="c2c_aurora_loop_top_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/axi_mm_passthrough.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/c2c_aurora_loop_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="c2c_aurora_loop_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/c2c_auora_loop.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../../mb_c2c_aurora/mb_c2c_aurora.srcs/utils_1/imports/synth_1/c2c_aurora_loop_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_mm_clean_passthr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_aurora_64b66b_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_chip2chip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_aurora1_state_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_aurora_64b66b_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_chip2chip_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vio_2_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_4"/>
+</GenRun>

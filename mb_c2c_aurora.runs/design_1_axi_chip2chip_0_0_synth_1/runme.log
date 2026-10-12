@@ -1,0 +1,861 @@
+
+*** Running vivado
+    with args -log design_1_axi_chip2chip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_chip2chip_0_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_chip2chip_0_0.tcl -notrace
+Command: synth_design -top design_1_axi_chip2chip_0_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 655046
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3609.852 ; gain = 279.766 ; free physical = 473 ; free virtual = 83425
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_chip2chip_0_0' [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/synth/design_1_axi_chip2chip_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3015]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (8#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (9#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (10#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (10#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (10#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (10#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (11#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1906]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (12#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (13#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (14#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (14#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (14#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (14#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (15#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (16#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3015]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized1' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized1' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1884]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized3' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized3' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1858]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized1' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3015]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized2' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized2' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3015]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1206]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1273]
+INFO: [Synth 8-226] default block is never used [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1295]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1390]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized2' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized2' (18#1) [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2146]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_chip2chip_0_0' (28#1) [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/synth/design_1_axi_chip2chip_0_0.v:58]
+WARNING: [Synth 8-7129] Port src_clk in module axi_chip2chip_v5_0_14_sync_cell__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[191] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[190] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[189] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[188] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[187] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[186] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[185] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[184] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[183] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[182] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[181] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[180] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[179] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[178] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[177] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[176] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[175] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[174] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[173] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[172] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[171] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[170] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[169] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[168] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[167] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[166] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[165] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[164] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[163] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[162] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[161] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[160] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[159] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[158] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[157] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[156] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[155] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[154] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[153] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[152] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[151] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[150] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[149] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[148] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[147] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[146] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[145] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[144] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[143] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[142] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[141] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[140] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[139] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[138] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[137] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[136] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[135] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[134] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[133] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[132] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[131] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[130] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[129] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[128] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[127] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[126] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[125] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[124] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[123] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[122] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[121] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[120] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[119] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[118] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[117] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[116] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[115] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[114] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[113] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[112] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[111] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[110] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[109] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[108] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[107] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[106] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[105] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[104] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[103] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[102] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[101] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[100] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[99] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[98] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[97] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[96] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[95] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[94] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_user_data[93] in module axi_chip2chip_v5_0_14_phy_init is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3686.758 ; gain = 356.672 ; free physical = 2717 ; free virtual = 76860
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3704.570 ; gain = 374.484 ; free physical = 5163 ; free virtual = 79308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3704.570 ; gain = 374.484 ; free physical = 5162 ; free virtual = 79307
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3704.570 ; gain = 0.000 ; free physical = 7197 ; free virtual = 81351
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.runs/design_1_axi_chip2chip_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.runs/design_1_axi_chip2chip_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.gen/sources_1/bd/design_1/ip/design_1_axi_chip2chip_0_0/design_1_axi_chip2chip_0_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/tools/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_axi_chip2chip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 35 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3900.070 ; gain = 0.000 ; free physical = 7495 ; free virtual = 81668
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3907.008 ; gain = 6.938 ; free physical = 7475 ; free virtual = 81648
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3907.008 ; gain = 576.922 ; free physical = 7436 ; free virtual = 81623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3907.008 ; gain = 576.922 ; free physical = 7435 ; free virtual = 81622
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.runs/design_1_axi_chip2chip_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_aw_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_ar_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\master_fpga_gen.axi_chip2chip_master_inst /axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3907.008 ; gain = 576.922 ; free physical = 7409 ; free virtual = 81596
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_chip2chip_v5_0_14_asitv10_axisc_register_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_chip2chip_v5_0_14_asitv10_axisc_register_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_chip2chip_v5_0_14_phy_init'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_chip2chip_v5_0_14_asitv10_axisc_register_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_chip2chip_v5_0_14_asitv10_axisc_register_slice__parameterized0'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__2'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__3'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__4'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                         00000001 |                         00000001
+                    PAT0 |                         00000100 |                         00000100
+                    PAT1 |                         00001000 |                         00001000
+                RX_READY |                         00010000 |                         00010000
+               PHY_ERROR |                         00100000 |                         00100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'axi_chip2chip_v5_0_14_phy_init'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3907.008 ; gain = 576.922 ; free physical = 7365 ; free virtual = 81558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   4 Input   10 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 4     
+	   4 Input    9 Bit       Adders := 15    
+	   2 Input    9 Bit       Adders := 3     
+	   3 Input    9 Bit       Adders := 8     
+	   4 Input    8 Bit       Adders := 9     
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   3 Input    2 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 5     
++---XORs : 
+	   2 Input     56 Bit         XORs := 3     
+	   2 Input     10 Bit         XORs := 4     
+	   2 Input      9 Bit         XORs := 10    
+	   2 Input      8 Bit         XORs := 9     
+	   2 Input      1 Bit         XORs := 182   
+	   8 Input      1 Bit         XORs := 9     
+	   7 Input      1 Bit         XORs := 9     
+	  13 Input      1 Bit         XORs := 3     
+	  14 Input      1 Bit         XORs := 6     
+	  31 Input      1 Bit         XORs := 6     
+	  28 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 6     
+	  26 Input      1 Bit         XORs := 3     
+	  67 Input      1 Bit         XORs := 3     
+	   5 Input      1 Bit         XORs := 6     
+	  16 Input      1 Bit         XORs := 6     
+	   4 Input      1 Bit         XORs := 15    
+	  11 Input      1 Bit         XORs := 3     
+	  10 Input      1 Bit         XORs := 3     
+	  24 Input      1 Bit         XORs := 3     
+	  62 Input      1 Bit         XORs := 3     
++---Registers : 
+	              192 Bit    Registers := 2     
+	              168 Bit    Registers := 3     
+	              163 Bit    Registers := 1     
+	              162 Bit    Registers := 1     
+	              146 Bit    Registers := 2     
+	              135 Bit    Registers := 2     
+	              128 Bit    Registers := 1     
+	               82 Bit    Registers := 4     
+	               64 Bit    Registers := 3     
+	               56 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 34    
+	                9 Bit    Registers := 79    
+	                8 Bit    Registers := 43    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 20    
+	                3 Bit    Registers := 20    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 161   
++---RAMs : 
+	              73K Bit	(512 X 146 bit)          RAMs := 1     
+	              67K Bit	(512 X 135 bit)          RAMs := 1     
+	              20K Bit	(256 X 82 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input  192 Bit        Muxes := 1     
+	   2 Input  168 Bit        Muxes := 1     
+	   2 Input  163 Bit        Muxes := 2     
+	   2 Input   56 Bit        Muxes := 3     
+	   3 Input   13 Bit        Muxes := 1     
+	   6 Input   13 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 41    
+	   3 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 170   
+	   8 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 40    
+	   5 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 39    
+	   4 Input    1 Bit        Muxes := 16    
+	   6 Input    1 Bit        Muxes := 16    
+	   5 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 146 bits, new ram width 145 bits.
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-3332] Sequential element (master_fpga_gen.axi_chip2chip_master_inst/aurora_ecc_io_stage.ecc_in_reg_slice_inst/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_chip2chip_v5_0_14.
+INFO: [Synth 8-3332] Sequential element (master_fpga_gen.axi_chip2chip_master_inst/aurora_ecc_io_stage.tdm_out_reg_slice_inst/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_chip2chip_v5_0_14.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 4119.414 ; gain = 789.328 ; free physical = 9758 ; free virtual = 83974
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                                                                           | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_base:                                                                                                                                                                                      | gen_wr_a.gen_word_narrow.mem_reg | 256 x 82(NO_CHANGE)    | W |   | 256 x 82(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      |                 | 
+|xpm_memory_base:                                                                                                                                                                                      | gen_wr_a.gen_word_narrow.mem_reg | 256 x 82(NO_CHANGE)    | W |   | 256 x 82(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      |                 | 
+|inst/\master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 146(NO_CHANGE)   | W |   | 512 x 146(NO_CHANGE)   |   | R | Port A and B     | 1      | 2      |                 | 
+|inst/\master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 135(NO_CHANGE)   | W |   | 512 x 135(NO_CHANGE)   |   | R | Port A and B     | 0      | 2      |                 | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                                                                                           | RTL Object                       | Inference      | Size (Depth x Width) | Primitives   | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|inst/\master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 256 x 6              | RAM64M8 x 4  | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 4174.094 ; gain = 844.008 ; free physical = 11612 ; free virtual = 85889
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 4191.117 ; gain = 861.031 ; free physical = 11598 ; free virtual = 85879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                                                                                                                                                                                           | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_base:                                                                                                                                                                                      | gen_wr_a.gen_word_narrow.mem_reg | 256 x 82(NO_CHANGE)    | W |   | 256 x 82(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      |                 | 
+|xpm_memory_base:                                                                                                                                                                                      | gen_wr_a.gen_word_narrow.mem_reg | 256 x 82(NO_CHANGE)    | W |   | 256 x 82(NO_CHANGE)    |   | R | Port A and B     | 1      | 1      |                 | 
+|inst/\master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_w_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 146(NO_CHANGE)   | W |   | 512 x 146(NO_CHANGE)   |   | R | Port A and B     | 1      | 2      |                 | 
+|inst/\master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_r_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 512 x 135(NO_CHANGE)   | W |   | 512 x 135(NO_CHANGE)   |   | R | Port A and B     | 0      | 2      |                 | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|Module Name                                                                                                                                                                                           | RTL Object                       | Inference      | Size (Depth x Width) | Primitives   | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+|inst/\master_fpga_gen.axi_chip2chip_master_inst/axi_chip2chip_b_fifo_inst/axi_chip2chip_async_fifo_inst/xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 256 x 6              | RAM64M8 x 4  | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 4207.133 ; gain = 877.047 ; free physical = 11594 ; free virtual = 85872
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11721 ; free virtual = 85991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11721 ; free virtual = 85991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11682 ; free virtual = 85952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11662 ; free virtual = 85932
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11677 ; free virtual = 85947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11684 ; free virtual = 85955
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+----------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                                                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+----------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_chip2chip_v5_0_14 | master_fpga_gen.axi_chip2chip_master_phy_inst/aurora_phy.standard_cc_module_inst/pma_init_stage_reg[127] | 125    | 1     | NO           | NO                 | YES               | 0      | 4       | 
++----------------------+----------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    51|
+|2     |LUT1     |    50|
+|3     |LUT2     |   469|
+|4     |LUT3     |   697|
+|5     |LUT4     |   264|
+|6     |LUT5     |   281|
+|7     |LUT6     |   661|
+|8     |RAM64M8  |     4|
+|9     |RAMB18E2 |     3|
+|10    |RAMB36E2 |     6|
+|11    |SRLC32E  |     4|
+|12    |FDCE     |    10|
+|13    |FDPE     |    14|
+|14    |FDRE     |  3128|
+|15    |FDSE     |    47|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 4213.070 ; gain = 882.984 ; free physical = 11683 ; free virtual = 85953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 775 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 4213.070 ; gain = 680.547 ; free physical = 11699 ; free virtual = 85970
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 4213.078 ; gain = 882.984 ; free physical = 11699 ; free virtual = 85969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4224.039 ; gain = 0.000 ; free physical = 11963 ; free virtual = 86234
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4309.344 ; gain = 0.000 ; free physical = 11835 ; free virtual = 86105
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 4 instances
+
+Synth Design complete, checksum: db6d89b8
+INFO: [Common 17-83] Releasing license: Synthesis
+184 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:54 . Memory (MB): peak = 4309.344 ; gain = 1396.617 ; free physical = 12044 ; free virtual = 86315
+INFO: [Common 17-1381] The checkpoint '/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.runs/design_1_axi_chip2chip_0_0_synth_1/design_1_axi_chip2chip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_chip2chip_0_0, cache-ID = f455f96c61137f2c
+INFO: [Coretcl 2-1174] Renamed 140 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/raofutian/30_hard_project/mb_pcie_incont_aurora_75G_8MB/mb_c2c_aurora.runs/design_1_axi_chip2chip_0_0_synth_1/design_1_axi_chip2chip_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_chip2chip_0_0_utilization_synth.rpt -pb design_1_axi_chip2chip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  5 10:47:59 2026...

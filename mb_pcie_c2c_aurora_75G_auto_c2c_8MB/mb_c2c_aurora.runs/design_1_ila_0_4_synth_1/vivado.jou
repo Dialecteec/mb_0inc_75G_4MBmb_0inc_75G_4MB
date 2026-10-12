@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jul 30 09:31:31 2026
+# Process ID: 2431117
+# Current directory: /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_ila_0_4_synth_1
+# Command line: vivado -log design_1_ila_0_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ila_0_4.tcl
+# Log file: /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_ila_0_4_synth_1/design_1_ila_0_4.vds
+# Journal file: /home/raofutian/30_hard_project/mb_c2c_aurora_100G_auto_c2c/mb_c2c_aurora.runs/design_1_ila_0_4_synth_1/vivado.jou
+# Running On: pc-Z13PE-D16-Series, OS: Linux, CPU Frequency: 1961.395 MHz, CPU Physical cores: 28, Host memory: 134815 MB
+#-----------------------------------------------------------
+source design_1_ila_0_4.tcl -notrace

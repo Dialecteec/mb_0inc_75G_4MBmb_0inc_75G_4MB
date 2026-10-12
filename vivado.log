@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jul 30 15:14:37 2026
+# Process ID: 78
+# Current directory: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c
+# Command line: vivado -mode batch -source /tmp/build_missing_ooc.tcl -tclargs mb_c2c_aurora.xpr -nolog -nojournal
+# Log file: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c/vivado.log
+# Journal file: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c/vivado.jou
+# Running On: pc-Z13PE-D16-Series, OS: Linux, CPU Frequency: 800.120 MHz, CPU Physical cores: 32, Host memory: 134815 MB
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/raofutian/.Xilinx/Vivado/2021.2/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source /tmp/build_missing_ooc.tcl
+# set project_file [file normalize [lindex $argv 0]]
+# set ip_runs {
+#   design_1_axi_bram_ctrl_0_0_synth_1
+#   design_1_blk_mem_gen_0_0_synth_1
+# }
+# open_project $project_file
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2888.633 ; gain = 28.992 ; free physical = 29262 ; free virtual = 112842
+# foreach run $ip_runs {
+#   reset_run $run
+# }
+# launch_runs $ip_runs -jobs 4
+[Thu Jul 30 15:14:58 2026] Launched design_1_axi_bram_ctrl_0_0_synth_1, design_1_blk_mem_gen_0_0_synth_1...
+Run output will be captured here:
+design_1_axi_bram_ctrl_0_0_synth_1: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c/mb_c2c_aurora.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c/mb_c2c_aurora.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3320.844 ; gain = 432.211 ; free physical = 29257 ; free virtual = 112836
+# wait_on_run $ip_runs
+[Thu Jul 30 15:14:58 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:03 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:08 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:13 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:23 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:33 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:43 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...
+[Thu Jul 30 15:15:53 2026] Waiting for {design_1_blk_mem_gen_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1} to finish...

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c_8MB/mb_c2c_aurora.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="8"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/aurora_64b66b_1_hard_err">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/aurora_64b66b_1_hard_err</obj_property>
+      <obj_property name="ObjectShortName">aurora_64b66b_1_hard_err</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/aurora_64b66b_1_mmcm_not_locked_out">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/aurora_64b66b_1_mmcm_not_locked_out</obj_property>
+      <obj_property name="ObjectShortName">aurora_64b66b_1_mmcm_not_locked_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/aurora_64b66b_1_soft_err">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/aurora_64b66b_1_soft_err</obj_property>
+      <obj_property name="ObjectShortName">aurora_64b66b_1_soft_err</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/aurora_64b66b_1_channel_up_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/aurora_64b66b_1_channel_up_1</obj_property>
+      <obj_property name="ObjectShortName">aurora_64b66b_1_channel_up_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/aurora_64b66b_1_lane_up_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/aurora_64b66b_1_lane_up_1[0:2]</obj_property>
+      <obj_property name="ObjectShortName">aurora_64b66b_1_lane_up_1[0:2]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

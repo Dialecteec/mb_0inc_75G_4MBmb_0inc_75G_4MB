@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcu280-fsvh2892-2L-e" LaunchTime="1785742254" LaunchIncrCheckpoint="$PPRDIR/../mb_c2c_aurora/mb_c2c_aurora.srcs/utils_1/imports/synth_1/c2c_aurora_loop_top.dcp">
+  <File Type="VDS-TIMING-PB" Name="c2c_aurora_loop_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="c2c_aurora_loop_top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="c2c_aurora_loop_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="c2c_aurora_loop_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="c2c_aurora_loop_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="c2c_aurora_loop_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="c2c_aurora_loop_top.vds"/>
+  <File Type="REPORTS-TCL" Name="c2c_aurora_loop_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="c2c_aurora_loop_top.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/axi_mm_passthrough.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/c2c_aurora_loop_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="c2c_aurora_loop_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/c2c_auora_loop.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../mb_c2c_aurora/mb_c2c_aurora.srcs/utils_1/imports/synth_1/c2c_aurora_loop_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design">
+      <Option Id="FsmExtraction">0</Option>
+      <Option Id="Directive">0</Option>
+      <Option Id="FlattenHierarchy">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_mm_clean_passthr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_aurora_64b66b_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_chip2chip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_aurora1_state_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_aurora_64b66b_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_chip2chip_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_vio_2_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_4"/>
+</GenRun>

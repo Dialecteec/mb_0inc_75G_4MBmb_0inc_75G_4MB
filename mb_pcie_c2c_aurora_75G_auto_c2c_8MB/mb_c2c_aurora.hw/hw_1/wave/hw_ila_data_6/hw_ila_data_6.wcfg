@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c_8MB/mb_c2c_aurora.hw/hw_1/wave/hw_ila_data_6/hw_ila_data_6.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="8"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="264"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wave_markers>
+      <marker label="" time="361" />
+      <marker label="" time="396" />
+      <marker label="" time="327" />
+   </wave_markers>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARADDR[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARBURST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARBURST[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWADDR[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWBURST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWBURST[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_BID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_BREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BRESP">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_BRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_BVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_BVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RDATA[127:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_RDATA[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_RID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RLAST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RLAST</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_RLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARLEN">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARLEN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARSIZE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_ARSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_ARSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_RREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RRESP">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_RRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_RVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_RVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WDATA[127:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_WDATA[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WLAST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WLAST</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_WLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWLEN">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWLEN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWSIZE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_AWSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_AWSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_WREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WSTRB">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WSTRB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_WSTRB[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/axi_chip2chip_1_m_axi_WVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_chip2chip_1_m_axi_WVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

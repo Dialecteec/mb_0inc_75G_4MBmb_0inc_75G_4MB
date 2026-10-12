@@ -1,0 +1,1 @@
+vopt -64 +acc=npr -l elaborate.log -L xil_defaultlib -L xpm -L gtwizard_ultrascale_v1_7_12 -L fifo_generator_v13_2_6 -L axi_chip2chip_v5_0_14 -L jtag_axi -L xlconstant_v1_1_7 -L axi_bram_ctrl_v4_1_6 -L blk_mem_gen_v8_4_5 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.design_1 xil_defaultlib.glbl -o design_1_opt

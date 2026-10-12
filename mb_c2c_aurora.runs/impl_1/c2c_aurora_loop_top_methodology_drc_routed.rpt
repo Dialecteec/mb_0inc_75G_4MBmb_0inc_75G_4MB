@@ -1,0 +1,467 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Wed Aug  5 14:39:27 2026
+| Host         : pc-Z13PE-D16-Series running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_methodology -file c2c_aurora_loop_top_methodology_drc_routed.rpt -pb c2c_aurora_loop_top_methodology_drc_routed.pb -rpx c2c_aurora_loop_top_methodology_drc_routed.rpx
+| Design       : c2c_aurora_loop_top
+| Device       : xcu280-fsvh2892-2L-e
+| Speed File   : -2L
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 53
++-----------+------------------+------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                | Violations |
++-----------+------------------+------------------------------------------------------------+------------+
+| TIMING-54 | Critical Warning | Scoped false path or clock group constraint between clocks | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                               | 26         |
+| TIMING-9  | Warning          | Unknown CDC Logic                                          | 1          |
+| TIMING-24 | Warning          | Overridden Max delay datapath only                         | 24         |
++-----------+------------------+------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-54#1 Critical Warning
+Scoped false path or clock group constraint between clocks  
+A scoped Clock Group timing constraint is set between clocks pcie_refclk_100m and design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_clk_i/bufg_gt_intclk/O (see constraint position 570 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope. 
+Related violations: <none>
+
+TIMING-54#2 Critical Warning
+Scoped false path or clock group constraint between clocks  
+A scoped Clock Group timing constraint is set between clocks pcie_refclk_100m and pipe_clk (see constraint position 573 in the Timing Constraint window in Vivado IDE). It is not recommended to define such scoped constraints between clocks as the constraint impacts timing paths outside of the scope. 
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync2_reg/PRE
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_meta_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_sync2_reg/PRE
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_0/inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.gtwiz_userclk_tx_active_out_reg/CLR,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.tx_active_cdc_to_stg2_reg/CLR,
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.tx_active_design_1_aurora_64b66b_0_0_cdc_to_reg/CLR
+design_1_wrapper/design_1_i/aurora_64b66b_0/inst/design_1_aurora_64b66b_0_0_core_i/design_1_aurora_64b66b_0_0_wrapper_i/design_1_aurora_64b66b_0_0_multi_gt_i/design_1_aurora_64b66b_0_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_0_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[10].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync2_reg/PRE
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_any_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync2_reg/PRE
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_meta_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_sync2_reg/PRE
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst/reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst/rst_in_sync3_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/aurora_64b66b_1/inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.gtwiz_userclk_tx_active_out_reg/CLR,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.tx_active_cdc_to_stg2_reg/CLR,
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/clock_module_i/ultrascale_tx_userclk_1/gen_gtwiz_userclk_tx_main.tx_active_design_1_aurora_64b66b_1_0_cdc_to_reg/CLR
+design_1_wrapper/design_1_i/aurora_64b66b_1/inst/design_1_aurora_64b66b_1_0_core_i/design_1_aurora_64b66b_1_0_wrapper_i/design_1_aurora_64b66b_1_0_multi_gt_i/design_1_aurora_64b66b_1_0_gt_i/inst/gen_gtwizard_gtye4_top.design_1_aurora_64b66b_1_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[11].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/m01_couplers/m01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#19 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 30 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#20 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_meta_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_out_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync1_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync2_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_12_gtye4_cpll_cal_inst/reset_synchronizer_resetin_tx_inst/rst_in_sync3_reg/PRE
+ (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#21 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/bufg_gt_coreclk_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/design_1_xdma_0_0_pcie4c_ip_gt_i/inst/gen_gtwizard_gtye4_top.design_1_xdma_0_0_pcie4c_ip_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[27].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#22 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r[4]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[0]/CLR,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[1]/CLR,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[2]/CLR,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[3]/CLR
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/intclk_rrst_n_r_reg[4]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#23 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_pcie_4_0_pipe_inst/pipe_tx_rate_ff[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/as_mac_in_detect_ff1_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/as_mac_in_detect_ff_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/as_mac_in_detect_user_reg/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/pipe_tx_rate_ff_reg[0]/CLR,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/pipe_tx_rate_ff_reg[1]/CLR
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/speed_change_in_progress_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#24 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_pcie_4_0_pipe_inst/user_lnk_up_cdc_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/user_lnk_up_cdc/arststages_ff_reg[0]/CLR
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/user_lnk_up_cdc/arststages_ff_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#25 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_pcie_4_0_pipe_inst/user_lnk_up_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/user_lnk_up_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#26 Warning
+LUT drives async reset alert  
+LUT cell design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/design_1_xdma_0_0_pcie4c_ip_pcie_4_0_pipe_inst/user_reset_cdc_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/user_reset_cdc/arststages_ff_reg[0]/PRE,
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/user_reset_cdc/arststages_ff_reg[1]/PRE
+design_1_wrapper/design_1_i/xdma_0/inst/pcie4c_ip_i/inst/user_reset_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 586). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 590). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 594). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 610). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0] overrides a set_max_delay -datapath_only (position 616). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0]_1 overrides a set_max_delay -datapath_only (position 628). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#7 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0]_1 overrides a set_max_delay -datapath_only (position 632). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#8 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0]_1 overrides a set_max_delay -datapath_only (position 636). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#9 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0]_1 overrides a set_max_delay -datapath_only (position 646). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#10 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks axi_bram_ctrl_0_BRAM_PORTA_CLK and txoutclk_out[0]_1 overrides a set_max_delay -datapath_only (position 648). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#11 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 364). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#12 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 365). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#13 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 366). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#14 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 588). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#15 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 592). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#16 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 596). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#17 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 606). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#18 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0] and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 608). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#19 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0]_1 and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 373). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#20 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0]_1 and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 626). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#21 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0]_1 and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 630). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#22 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0]_1 and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 634). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#23 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0]_1 and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 650). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#24 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 564 in the Timing Constraints window in Vivado IDE) between clocks txoutclk_out[0]_1 and axi_bram_ctrl_0_BRAM_PORTA_CLK overrides a set_max_delay -datapath_only (position 656). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+

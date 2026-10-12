@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/raofutian/30_hard_project/mb_0inc_75G_4MB/mb_c2c_aurora.hw/hw_1/wave/hw_ila_data_8/hw_ila_data_8.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="8"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="236"></NameColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wave_markers>
+      <marker label="" time="679" />
+      <marker label="" time="316" />
+      <marker label="" time="350" />
+      <marker label="" time="283" />
+   </wave_markers>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARADDR[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARBURST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARBURST[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARCACHE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARCACHE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARCACHE[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARLEN">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARLEN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARLOCK">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARLOCK</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARLOCK</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARPROT">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARQOS">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARQOS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARQOS[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARSIZE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWADDR[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWBURST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWBURST[1:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWBURST[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWCACHE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWCACHE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWCACHE[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWLEN">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWLEN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWLOCK">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWLOCK</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWLOCK</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWPROT">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWQOS">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWQOS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWQOS[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWSIZE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_BREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_BREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_BRESP">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_BVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_BVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RDATA[127:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_RDATA[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RLAST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RLAST</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_RLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARREADY</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARVALID</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARLEN">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARLEN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARSIZE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_ARSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_ARSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_RREADY</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RRESP">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_RVALID</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WDATA">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WDATA[127:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_WDATA[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WLAST">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WLAST</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_WLAST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWADDR">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWADDR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWADDR[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWLEN">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWLEN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWLEN[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWSIZE">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWSIZE[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_AWVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WREADY">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_WREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WSTRB">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WSTRB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_WSTRB[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WVALID">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_wrapper/design_1_i/smartconnect_0_M01_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">smartconnect_0_M01_AXI_WVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

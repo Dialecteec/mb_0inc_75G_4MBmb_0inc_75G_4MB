@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jul 30 15:13:59 2026
+# Process ID: 78
+# Current directory: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c
+# Command line: vivado -mode batch -source /tmp/query_ooc_runs.tcl -tclargs mb_c2c_aurora.xpr -nolog -nojournal
+# Log file: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c/vivado.log
+# Journal file: /home/raofutian/30_hard_project/mb_pcie_c2c_aurora_75G_auto_c2c/vivado.jou
+# Running On: pc-Z13PE-D16-Series, OS: Linux, CPU Frequency: 800.057 MHz, CPU Physical cores: 32, Host memory: 134815 MB
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/raofutian/.Xilinx/Vivado/2021.2/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source /tmp/query_ooc_runs.tcl
+# set project_file [file normalize [lindex $argv 0]]
+# open_project $project_file
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2888.926 ; gain = 27.992 ; free physical = 29262 ; free virtual = 112842
+# foreach run [lsort [get_runs -filter {IS_SYNTHESIS == 1}]] {
+#   puts "RUN [get_property NAME $run] | [get_property STATUS $run] | refresh=[get_property NEEDS_REFRESH $run] | progress=[get_property PROGRESS $run]"
+# }
+RUN design_1_aurora1_state_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_aurora_64b66b_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_aurora_64b66b_1_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_axi_bram_ctrl_0_0_synth_1 | Not started | refresh=0 | progress=0%
+RUN design_1_axi_bram_ctrl_0_1_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_axi_chip2chip_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_axi_chip2chip_1_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_axi_mm_clean_passthr_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_blk_mem_gen_0_0_synth_1 | Not started | refresh=0 | progress=0%
+RUN design_1_ila_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_ila_0_1_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_ila_0_3_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_ila_0_4_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_smartconnect_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_vio_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_vio_1_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_vio_2_2_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_vio_3_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN design_1_xdma_0_0_synth_1 | synth_design Complete! | refresh=0 | progress=100%
+RUN synth_1 | synth_design Complete! | refresh=1 | progress=100%
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 30 15:14:14 2026...
